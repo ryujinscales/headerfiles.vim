@@ -1,5 +1,5 @@
 # Headerfiles.vim
-I believe in the motto "Be simple, Be lazy" and hence, this fast as HELL and simple plugin was born for lazy people that appends a certain set of header files when &lt;LEADER>ih or <C-I> is pressed
+I believe in the motto "Be simple, Be lazy" and hence, this fast as HELL and simple plugin was born for lazy people that appends a certain set of header files when &lt;LEADER>ih is pressed
 
 ## ⚠ This plugin is not under development and is extremely simple. Please do not expect us to update this plugin anytime soon ⚠
 
@@ -27,7 +27,6 @@ function! InsertHeaderFiles()
   call append(0, [header1, header2, header3, header4, header5])
 endfunction
 " Map the function to the `<LEADER>ih` key sequence
-imap <C-I> :call InsertHeaderFiles()<CR>
 nnoremap <LEADER>ih :call InsertHeaderFiles()<CR>
 ```
 
