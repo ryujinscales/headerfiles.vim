@@ -11,5 +11,4 @@ function! InsertHeaderFiles()
   call append(0, [header1, header2, header3])
 endfunction
 " Map the function to the `<LEADER>ih` key sequence
-imap <C-I> :call InsertHeaderFiles()<CR>
 nnoremap <LEADER>ih :call InsertHeaderFiles()<CR>
