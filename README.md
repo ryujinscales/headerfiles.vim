@@ -31,7 +31,7 @@ imap <C-I> :call InsertHeaderFiles()<CR>
 nnoremap <LEADER>ih :call InsertHeaderFiles()<CR>
 ```
 
-Add more variables and also edit the array
+Add more variables and also edit the `call append(0, [header1, header2, header3, header4, header5])` array inside the `InsertHeaderFiles()` function
 
 ## Contributing
 
