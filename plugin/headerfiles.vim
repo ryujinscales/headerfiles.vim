@@ -1,5 +1,5 @@
-
-" Plugin to insert header files
+" Headerfiles.vim
+" MIT License
 function! InsertHeaderFiles()
   " Insert header files here
   let header1 = "#include <iostream>"
