@@ -1,7 +1,7 @@
 # Headerfiles.vim
-A simple VimScript plugin to append a certain set of header files when &lt;LEADER>ih is pressed
+I believe in the motto "Be simple, Be lazy" and hence, this fast as HELL and simple plugin was born for lazy people that appends a certain set of header files when &lt;LEADER>ih or <C-I> is pressed
 
-## ⚠ This plugin is not under development and is extremely simple. Please do not expect us to update this plugin anytime soon. [vim-cycle](https://github.com/zef/vim-cycle) is a good alternative to this plugin ⚠
+## ⚠ This plugin is not under development and is extremely simple. Please do not expect us to update this plugin anytime soon ⚠
 
 ## Installation
 Using any package manager of your choice. Vim-Plug in this case
@@ -27,7 +27,12 @@ function! InsertHeaderFiles()
   call append(0, [header1, header2, header3, header4, header5])
 endfunction
 " Map the function to the `<LEADER>ih` key sequence
+imap <C-I> :call InsertHeaderFiles()<CR>
 nnoremap <LEADER>ih :call InsertHeaderFiles()<CR>
 ```
 
 Add more variables and also edit the array
+
+## Contributing
+
+Please raise an issue if you find any bugs (unlikely for such a simple plugin)
