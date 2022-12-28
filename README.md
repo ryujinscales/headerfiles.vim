@@ -35,3 +35,4 @@ Add more variables and also edit the `call append(0, [header1, header2, header3,
 ## Contributing
 
 Please raise an issue if you find any bugs (unlikely for such a simple plugin)
+Feel free to open a PR also!
