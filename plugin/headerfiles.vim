@@ -28,7 +28,7 @@ endfunction
 
 function! rustHeaderFiles()
   " Insert header files here
-  let header1 = "use std::io"
+  let header1 = "use std::io;"
   " Insert the header files at the top of the file
   call append(0, [header1])
 endfunction
