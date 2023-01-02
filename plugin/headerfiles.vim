@@ -34,12 +34,16 @@ function RustHeaderFiles()
 endfunction
 
 " Map the functions to the `<LEADER>ih` key sequence
-if (&ft == 'cpp')
-    nmap <LEADER>ih :call CppHeaderFiles()<CR>
-elseif (&ft == 'c')
-    nmap <LEADER>ih :call CHeaderFiles()<CR>
-elseif (&ft == 'rs')
-    nmap <LEADER>ih :call RustHeaderFiles()<CR>
-else
-    :echo ""
-endif
+" if (&ft == 'cpp')
+"     nmap <LEADER>ih :call CppHeaderFiles()<CR>
+" elseif (&ft == 'c')
+"     nmap <LEADER>ih :call CHeaderFiles()<CR>
+" elseif (&ft == 'rs')
+"     nmap <LEADER>ih :call RustHeaderFiles()<CR>
+" else
+"     :echo ""
+" endif
+
+nmap <LEADER>cph :call CppHeaderFiles()<CR>
+nmap <LEADER>ch :call CHeaderFiles()<CR>
+nmap <LEADER>rh :call RustHeaderFiles()<CR>
