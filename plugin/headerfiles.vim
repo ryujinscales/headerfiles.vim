@@ -41,5 +41,5 @@ elseif (&ft == 'c')
 elseif (&ft == 'rs')
     nnoremap <LEADER>ih :call RustHeaderFiles()<CR>
 else
-    :echo "headerfiles.vim not yet supported for this language"
+    :echo ""
 endif
