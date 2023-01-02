@@ -34,5 +34,13 @@ function! rustHeaderFiles()
 endfunction
 
 
-" Map the function to the `<LEADER>ih` key sequence
-nnoremap <LEADER>ih :call cppHeaderFiles()<CR>
+" Map the functions to the `<LEADER>ih` key sequence
+if (&ft == 'cpp')
+    nnoremap <LEADER>ih :call cppHeaderFiles()<CR>
+elseif (&ft == 'c')
+    nnoremap <LEADER>ih :call cHeaderFiles()<CR>
+elseif (&ft == 'rs')
+    nnoremap <LEADER>ih :call rustHeaderFiles()<CR>
+else
+    :echo "headerfiles.vim not yet supported for this language"
+endif
