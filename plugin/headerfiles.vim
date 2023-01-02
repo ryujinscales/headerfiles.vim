@@ -1,6 +1,6 @@
 " Headerfiles.vim
 " MIT License
-function! cppHeaderFiles()
+function CppHeaderFiles()
   " Insert header files here
   let header1 = "#include <iostream>"
   let header2 = "#include <cmath>"
@@ -16,7 +16,7 @@ function! cppHeaderFiles()
   call append(0, [header1, header2, header3, header4, header5, header6, header7, header8, header9])
 endfunction
 
-function! cHeaderFiles()
+function CHeaderFiles()
   " Insert header files here
   let header1 = "#include <stdio.h>"
   let header2 = "#include <conio.h>"
@@ -26,7 +26,7 @@ function! cHeaderFiles()
   call append(0, [header1, header2, header3, header4])
 endfunction
 
-function! rustHeaderFiles()
+function RustHeaderFiles()
   " Insert header files here
   let header1 = "use std::io;"
   " Insert the header files at the top of the file
@@ -35,11 +35,11 @@ endfunction
 
 " Map the functions to the `<LEADER>ih` key sequence
 if (&ft == 'cpp')
-    nnoremap <LEADER>ih :call cppHeaderFiles()<CR>
+    nnoremap <LEADER>ih :call CppHeaderFiles()<CR>
 elseif (&ft == 'c')
-    nnoremap <LEADER>ih :call cHeaderFiles()<CR>
+    nnoremap <LEADER>ih :call CHeaderFiles()<CR>
 elseif (&ft == 'rs')
-    nnoremap <LEADER>ih :call rustHeaderFiles()<CR>
+    nnoremap <LEADER>ih :call RustHeaderFiles()<CR>
 else
     :echo "headerfiles.vim not yet supported for this language"
 endif
