@@ -11,28 +11,12 @@ Plug 'ryujinscales/Headerfiles.vim'
 ```
 And run `:PlugInstall`
 
+### Info
 This plugin inserts header files like `#include <iostream>`, `#include <cmath>` etc.
 
 ## Customization
-```vim
-" Plugin to insert header files
-function! InsertHeaderFiles()
-  " Insert header files here
-  let header1 = "#include <iostream>"
-  let header2 = "#include <cmath>"
-  let header3 = "#include <vector>"
-  let header4 = "#include <assert.h>"
-  let header5 = "#include <random>"
-  " Insert the header files at the top of the file
-  call append(0, [header1, header2, header3, header4, header5])
-endfunction
-" Map the function to the `<LEADER>ih` key sequence
-nnoremap <LEADER>ih :call InsertHeaderFiles()<CR>
-```
-
-Add more variables and also edit the `call append(0, [header1, header2, header3, header4, header5])` array inside the `InsertHeaderFiles()` function
+Not currently customizable (until someone opens a PR with customization options)
 
 ## Contributing
-
 Please raise an issue if you find any bugs (unlikely for such a simple plugin)
 Feel free to open a PR also!
