@@ -14,6 +14,9 @@ And run `:PlugInstall`
 ### Info
 This plugin inserts header files like `#include <iostream>`, `#include <cmath>` etc.
 
+### Usage
+Press `<LEADER>ih` to append the headerfiles in a file.
+
 ## Customization
 Not currently customizable (until someone opens a PR with customization options)
 
