@@ -25,4 +25,4 @@ Feel free to open a PR also!
 ### TODO
 - [ ] Customization
 - [ ] Convert to lua
-- [ ] Support for C
+- [x] Support for C
