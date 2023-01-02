@@ -1,6 +1,6 @@
 " Headerfiles.vim
 " MIT License
-function! InsertHeaderFiles()
+function! cppHeaderFiles()
   " Insert header files here
   let header1 = "#include <iostream>"
   let header2 = "#include <cmath>"
@@ -15,5 +15,24 @@ function! InsertHeaderFiles()
   " Insert the header files at the top of the file
   call append(0, [header1, header2, header3, header4, header5, header6, header7, header8, header9])
 endfunction
+
+function! cHeaderFiles()
+  " Insert header files here
+  let header1 = "#include <stdio.h>"
+  let header2 = "#include <conio.h>"
+  let header3 = "#include <stdlib.h>"
+  let header4 = "#include <assert.h>"
+  " Insert the header files at the top of the file
+  call append(0, [header1, header2, header3, header4])
+endfunction
+
+function! rustHeaderFiles()
+  " Insert header files here
+  let header1 = "use std::io"
+  " Insert the header files at the top of the file
+  call append(0, [header1])
+endfunction
+
+
 " Map the function to the `<LEADER>ih` key sequence
-nnoremap <LEADER>ih :call InsertHeaderFiles()<CR>
+nnoremap <LEADER>ih :call cppHeaderFiles()<CR>
