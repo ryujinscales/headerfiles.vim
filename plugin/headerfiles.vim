@@ -33,7 +33,6 @@ function! rustHeaderFiles()
   call append(0, [header1])
 endfunction
 
-
 " Map the functions to the `<LEADER>ih` key sequence
 if (&ft == 'cpp')
     nnoremap <LEADER>ih :call cppHeaderFiles()<CR>
