@@ -14,7 +14,7 @@ This plugin inserts header files like `#include <iostream>`, `#include <cmath>` 
 
 ### Usage
 Press `<LEADER>cbh` to append the headerfiles in a C++ file.
-Press `<LEADER>ch` to append the headerfiles in a C file.
+Press `<LEADER>cch` to append the headerfiles in a C file.
 Press `<LEADER>rh` to append the headerfiles in a Rust file.
 
 ## Customization
