@@ -35,11 +35,11 @@ endfunction
 
 " Map the functions to the `<LEADER>ih` key sequence
 if (&ft == 'cpp')
-    nnoremap <LEADER>ih :call CppHeaderFiles()<CR>
+    nmap <LEADER>ih :call CppHeaderFiles()<CR>
 elseif (&ft == 'c')
-    nnoremap <LEADER>ih :call CHeaderFiles()<CR>
+    nmap <LEADER>ih :call CHeaderFiles()<CR>
 elseif (&ft == 'rs')
-    nnoremap <LEADER>ih :call RustHeaderFiles()<CR>
+    nmap <LEADER>ih :call RustHeaderFiles()<CR>
 else
     :echo ""
 endif
