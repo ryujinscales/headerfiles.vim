@@ -1,7 +1,5 @@
 # Headerfiles.vim
-I believe in the motto "Be simple, Be lazy" and hence, this fast as HELL and simple plugin was born for lazy people that appends a certain set of header files when &lt;LEADER>ih is pressed. Currently supports only C++
-
-## ⚠ This plugin is not under development and is extremely simple. Please do not expect us to update this plugin anytime soon ⚠
+I believe in the motto "Be simple, Be lazy" and hence, this fast as HELL and simple plugin was born for lazy people that appends a certain set of header files when &lt;LEADER>ih is pressed. Currently supports only C, C++ and Rust.
 
 ## Installation
 Using any package manager of your choice. Vim-Plug in this case
