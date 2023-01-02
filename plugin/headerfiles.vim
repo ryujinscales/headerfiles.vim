@@ -45,5 +45,5 @@ endfunction
 " endif
 
 nmap <LEADER>cph :call CppHeaderFiles()<CR>
-nmap <LEADER>ch :call CHeaderFiles()<CR>
+nmap <LEADER>cch :call CHeaderFiles()<CR>
 nmap <LEADER>rh :call RustHeaderFiles()<CR>
