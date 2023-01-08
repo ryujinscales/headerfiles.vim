@@ -11,9 +11,10 @@ function CppHeaderFiles()
   let header7 = "#include <string_view>"
   let header8 = "#include <utility>"
   let header9 = "#include <vector>"
+  let header10 = "#include <regex>"
   
   " Insert the header files at the top of the file
-  call append(0, [header1, header2, header3, header4, header5, header6, header7, header8, header9])
+  call append(0, [header1, header2, header3, header4, header5, header6, header7, header8, header9, header10])
 endfunction
 
 function CHeaderFiles()
